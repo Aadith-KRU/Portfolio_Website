@@ -1,0 +1,351 @@
+
+html {
+    scroll-behavior:smooth;
+}
+
+* {
+	line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+}
+
+
+body {
+    background: url("../images/bg.png") no-repeat center center fixed;
+    background-size: cover; 
+    font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+}
+
+
+#hero {
+    background: url("../images/bg.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+#hero h1, #hero p {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+.typewriter span {
+    display: inline-block;
+    animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+.nav ul li .find-me-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li .find-me-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+	font-family:Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin";
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+	font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin"
+}
+
+.cta .btn {
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+	border-radius: 4px;
+    background-color: black;
+	color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+	font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight", "Poppins Light", "Poppins Medium", "Poppins SemiBold", "Poppins Thin"
+}
+
+.cta .btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05); 
+}
+
+.cta .btn-dark {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.cta .btn-dark:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services, .projects, .products {
+    background-color: #f0f0f0;
+}
+
+.services h2, .projects h2, .products h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards, .project-cards, .product-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card, .project-card, .product-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 30%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover, .project-card:hover, .product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .project-image {
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+/* Product Cards */
+.product-card .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.find-me-links a, .contact-links a {
+    margin: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #333;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.find-me-links a:hover, .contact-links a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+.btn:hover {
+    background: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+.btn-gradient {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Custom gradient */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .cta .btn, .btn-gradient {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .service-cards, .project-cards, .product-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 80px 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .card, .project-card, .product-card {
+        flex-basis: 100%;
+    }
+    .cta .btn, .btn-gradient {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav ul {
+        display: none; /* Hide navigation for small screens; consider adding a hamburger menu */
+    }
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    #hero p {
+        font-size: 0.9rem;
+    }
+    .cta .btn, .btn-gradient {
+        padding: 8px 16px;
+    }
+    footer {
+        padding: 60px 20px;
+    }
+}
+
